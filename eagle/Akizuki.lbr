@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="8.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3051,6 +3051,19 @@ Digikey: 553-1349-ND&lt;/p&gt;</description>
 <pad name="14" x="33.02" y="0" drill="0.9" diameter="1.9304"/>
 <text x="0" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="HC-49/S">
+<smd name="P$1" x="-4.95" y="0" dx="5.5" dy="1.6" layer="1"/>
+<smd name="P$2" x="4.95" y="0" dx="5.5" dy="1.6" layer="1"/>
+<rectangle x1="-5.7" y1="-2.35" x2="5.7" y2="2.35" layer="39"/>
+<wire x1="-5.8" y1="2" x2="-5.8" y2="2.45" width="0.2" layer="21"/>
+<wire x1="-5.8" y1="2.45" x2="5.8" y2="2.45" width="0.2" layer="21"/>
+<wire x1="5.8" y1="2.45" x2="5.8" y2="2" width="0.2" layer="21"/>
+<wire x1="5.8" y1="-2" x2="5.8" y2="-2.45" width="0.2" layer="21"/>
+<wire x1="5.8" y1="-2.45" x2="-5.8" y2="-2.45" width="0.2" layer="21"/>
+<wire x1="-5.8" y1="-2.45" x2="-5.8" y2="-2" width="0.2" layer="21"/>
+<text x="-6" y="5" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-6" y="3" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PNP">
@@ -4816,6 +4829,19 @@ RA0 = ICSPDAT
 <wire x1="12.7" y1="22.86" x2="17.78" y2="22.86" width="0.254" layer="94" curve="180"/>
 <text x="5.08" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="5.08" y="22.86" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="XTAL">
+<description>Generic crystal symbol</description>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6684,6 +6710,34 @@ Push-push type uSD socket. Schematic element and footprint production proven. Sp
 <connect gate="G$1" pin="OE" pad="11"/>
 <connect gate="G$1" pin="VCCA" pad="1"/>
 <connect gate="G$1" pin="VCCB" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P-01767-16MHZ">
+<description>&lt;a href = "http://akizukidenshi.com/catalog/g/gP-01767/"&gt;秋月ページ&lt;/a&gt;&lt;br&gt;
+&lt;a href = "http://akizukidenshi.com/download/ds/siward/p1767_16mhz.pdf"&gt;データシート&lt;/a&gt;&lt;br&gt;
+
+表面実装タイプ・クリスタル（水晶発振子）　１６ＭＨｚ（５個入）&lt;br&gt;
+[16MHz]&lt;br&gt;
+通販コード　P-01767&lt;br&gt;
+発売日　2007/02/01&lt;br&gt;
+メーカーカテゴリ　シワードテクノロジー株式会社(SIWARD)&lt;br&gt;
+形状は小型のＨＣ－４９／Ｓです。&lt;br&gt;
+・ＡＴカット&lt;br&gt;
+・負荷容量：１８ｐＦ&lt;br&gt;
+※１パック＝５個単位での販売です。&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="XTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HC-49/S">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
