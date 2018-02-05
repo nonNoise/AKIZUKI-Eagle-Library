@@ -21,16 +21,16 @@ AKIZUKI-Eagle-Library
 
 また、作って欲しいライブラリがあれば以下のフォームへ
 
-https://docs.google.com/forms/d/e/1FAIpQLSdrMkiEMbF2kPQSdAUvBFTaOkSK_Yb0Dbv86sXLRHxQ9BmUOQ/viewform?usp=sf_link
+    https://docs.google.com/forms/d/e/1FAIpQLSdrMkiEMbF2kPQSdAUvBFTaOkSK_Yb0Dbv86sXLRHxQ9BmUOQ/viewform?usp=sf_link
 
 ライセンスはMITライセンスです。好きなように自由に使いな、ただし以下のコードは残しておいてな。
 (正直、基板に残る訳ではないので、ライブラリを再配布する時だけ名前を残していただければ幸せです。)
 
-The MIT License (MIT)
-Copyright (c) 2013 nonNoise(Y.Kitagami)
+    The MIT License (MIT)
+    Copyright (c) 2013 nonNoise(Y.Kitagami)
 
 
-■ライブラリ リスト
+■ライブラリ リスト (2018.02.05)
 -----------------------------------------
 
 ::
