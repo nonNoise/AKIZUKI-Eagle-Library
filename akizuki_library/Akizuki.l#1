@@ -6742,6 +6742,23 @@ Source: TOSHIBA .. 2SC1815   1.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="P-03277_VR_３３６２Ｐ" prefix="VR">
+<gates>
+<gate name="G$1" symbol="VR_３３６２Ｐ" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="VR_３３６２Ｐ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="M-06195_XBEE" prefix="U">
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
